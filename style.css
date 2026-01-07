@@ -94,3 +94,26 @@ body {
     line-height: 1.8;
     color: #444;
 }
+.about-more {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.about-more.open {
+    max-height: 1000px; /* large enough to show content */
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.read-more-btn:hover {
+    text-decoration: underline;
+}
