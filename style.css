@@ -158,3 +158,24 @@ body {
 .about a:hover {
     color: #333;
 }
+/* Shared hover zoom effect for profile & timeline photos */
+.about-photo,
+.timeline-photo {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Zoom on hover */
+.about-photo:hover,
+.timeline-photo:hover {
+    transform: scale(1.15);
+}
+.about-photo:hover,
+.timeline-photo:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.about-layout,
+.timeline-item {
+    overflow: visible;
+}
