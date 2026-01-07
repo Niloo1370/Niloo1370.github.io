@@ -51,10 +51,10 @@ body {
     border: 5px solid rgb(170, 215, 201);
 }
 .timeline-photo {
-    width: 128px;
-    height: 128px;
-    min-width: 128px;
-    min-height: 128px;
+    width: 160px;
+    height: 160px;
+    min-width: 160px;
+    min-height: 160px;
     object-fit: cover;
     border-radius: 50%;
     margin-top: 4px; /* aligns with text baseline */
@@ -77,10 +77,10 @@ body {
 }
 
 .about-photo {
-    width: 128px;
-    height: 128px;
-    min-width: 128px;
-    min-height: 128px;
+    width: 160px;
+    height: 160px;
+    min-width: 160px;
+    min-height: 160px;
     object-fit: cover;
     border-radius: 50%;
     margin-top: 4px; /* aligns with text baseline */
@@ -195,5 +195,9 @@ body {
 /* Move photo to the right for Postdoc section */
 .timeline-item.postdoc {
     flex-direction: row-reverse;
+}
+/* Pull Postdoc text slightly left */
+.timeline-item.postdoc {
+    gap: 16px; /* smaller than default 30px */
 }
 
