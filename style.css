@@ -53,11 +53,15 @@
 
 /* Profile photo */
 .about-photo {
-    width: 5px;
-    max-width: 5px;
-    height: auto;
-    border-radius: 10px;
+    width: 32px !important;
+    height: 32px !important;
+    max-width: 32px !important;
+    max-height: 32px !important;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
+
 
 /* Text block */
 .about-text {
