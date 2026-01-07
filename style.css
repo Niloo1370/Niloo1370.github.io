@@ -46,11 +46,11 @@ body {
 .about {
     max-width: 1000px;
     margin: 0 auto 80px auto;
-    background: rgba(255, 255, 255, 0.253);
+    background: rgba(208, 200, 247, 0.962);
     padding: 20px 24px;
 
-    border: 1.5px solid black;
-    border-radius: 0;
+    border: 1.5px solid rgb(60, 47, 205);
+    border-radius: 1px;
 }
 
 
