@@ -53,9 +53,10 @@
 
 /* Profile photo */
 .about-photo {
-    width: 140px;        /* resize photo */
+    width: 50px;
+    max-width: 50px;
     height: auto;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 /* Text block */
@@ -81,23 +82,4 @@
     text-align: justify;
     line-height: 1.8;
     color: #444;
-}
-
-.about-photo {
-    width: 2px;  /* smaller */
-    width: 6px;  /* bigger */
-}
-
-.about-layout {
-    gap: 20px;  /* closer */
-    gap: 60px;  /* further */
-}
-
-.about-bullet {
-    width: 24px;
-    height: 24px;
-}
-.about p {
-    line-height: 1.6;  /* tighter */
-    line-height: 2.0;  /* looser */
 }
