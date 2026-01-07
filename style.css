@@ -84,8 +84,8 @@
 }
 
 .about-photo {
-    width: 120px;  /* smaller */
-    width: 160px;  /* bigger */
+    width: 20px;  /* smaller */
+    width: 60px;  /* bigger */
 }
 
 .about-layout {
