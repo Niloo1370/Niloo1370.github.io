@@ -192,4 +192,10 @@ body {
 .timeline-item:hover li {
     color: #000;
 }
-transition: transform 0.4s ease;
+/* Move photo to the right for Postdoc section */
+.timeline-item.postdoc {
+    flex-direction: row-reverse;
+}
+.timeline-item.postdoc {
+    flex-direction: row-reverse;
+}
