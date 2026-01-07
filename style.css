@@ -198,6 +198,6 @@ body {
 }
 /* Pull Postdoc text slightly left */
 .timeline-item.postdoc {
-    gap: 16px; /* smaller than default 30px */
+    gap: -10px; /* smaller than default 30px */
 }
 
