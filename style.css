@@ -11,7 +11,7 @@
     top: 0;
     width: 6px;
     height: 100%;
-    background: #ccc;
+    background: #d5d1d1;
     border-radius: 3px;
 }
 
@@ -35,4 +35,21 @@
     background: #999;
     border-radius: 50%;
     border: 5px solid white;
+}
+
+.about {
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.about h2 {
+    margin-top: 0;
+}
+
+.about p {
+    line-height: 1.7;
+    color: #444;
 }
