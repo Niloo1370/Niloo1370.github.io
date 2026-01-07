@@ -179,3 +179,34 @@ body {
 .timeline-item {
     overflow: visible;
 }
+/* Hover effect for About section */
+.about {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about:hover {
+    background-color: rgb(200, 210, 215);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Text emphasis inside About on hover */
+.about:hover h2,
+.about:hover p {
+    color: #000;
+}
+/* Hover effect for timeline sections */
+.timeline-item {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+    background-color: #ececec;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Text emphasis inside timeline on hover */
+.timeline-item:hover h2,
+.timeline-item:hover h3,
+.timeline-item:hover li {
+    color: #000;
+}
