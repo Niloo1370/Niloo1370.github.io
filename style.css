@@ -41,26 +41,26 @@
     max-width: 1000px;
     margin: 0 auto 80px auto;
     background: rgba(255, 255, 255, 0.253);
-    padding: 40px;
+    padding: 20px 24px;
     border-radius: 12px;
 }
 
 .about-layout {
     display: flex;
     align-items: flex-start;
-    gap: 40px;
+    gap: 12px; /* much tighter = CV look */
 }
 
-/* Profile photo */
 .about-photo {
-    width: 2px !important;
-    height: 2px !important;
-    max-width: 2px !important;
-    max-height: 2px !important;
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    min-height: 28px;
     object-fit: cover;
-    border-radius: 1%;
-    flex-shrink: 0;
+    border-radius: 50%;
+    margin-top: 4px; /* aligns with text baseline */
 }
+
 
 
 /* Text block */
