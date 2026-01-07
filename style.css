@@ -1,7 +1,38 @@
-body {
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
+.timeline {
+    position: relative;
+    padding-left: 60px;
+}
+
+/* Vertical road */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background: #ccc;
+    border-radius: 3px;
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    background: #f8f8f8;
+    padding: 25px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+/* Big circle bullet */
+.timeline-marker {
+    position: absolute;
+    left: -45px;
+    top: 40px;
+    width: 30px;
+    height: 30px;
+    background: #999;
+    border-radius: 50%;
+    border: 5px solid white;
 }
