@@ -53,8 +53,8 @@
 
 /* Profile photo */
 .about-photo {
-    width: 50px;
-    max-width: 50px;
+    width: 5px;
+    max-width: 5px;
     height: auto;
     border-radius: 10px;
 }
