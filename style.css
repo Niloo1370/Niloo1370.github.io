@@ -61,7 +61,7 @@ body {
 .about {
     max-width: 1000px;
     margin: 0 auto 80px auto;
-    background: rgb(191, 192, 193);
+    background: rgba(221, 223, 225, 0.685);
     padding: 20px 24px;
 
     border: 1.5px solid rgb(0, 7, 13);
