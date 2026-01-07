@@ -47,11 +47,11 @@ body {
 .about {
     max-width: 1000px;
     margin: 0 auto 80px auto;
-    background: rgba(208, 200, 247, 0.962);
+    background: rgba(169, 216, 242, 0.962);
     padding: 20px 24px;
 
-    border: 1.5px solid rgb(60, 47, 205);
-    border-radius: 1px;
+    border: 1.5px solid rgb(3, 29, 55);
+    border-radius: 5px;
 }
 
 .about-layout {
@@ -68,13 +68,6 @@ body {
     object-fit: cover;
     border-radius: 50%;
     margin-top: 4px; /* aligns with text baseline */
-}
-
-
-.about-layout {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px; /* much tighter = CV look */
 }
 
 /* Text block */
