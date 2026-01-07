@@ -34,22 +34,70 @@
     height: 30px;
     background: #999;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 5px solid rgb(170, 215, 201);
 }
 
 .about {
-    max-width: 900px;
-    margin: 0 auto 60px auto;
-    background: white;
+    max-width: 1000px;
+    margin: 0 auto 80px auto;
+    background: rgba(255, 255, 255, 0.253);
     padding: 40px;
     border-radius: 12px;
+}
+
+.about-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Profile photo */
+.about-photo {
+    width: 140px;        /* resize photo */
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Text block */
+.about-text {
+    position: relative;
+}
+
+/* Big black bullet */
+.about-bullet {
+    width: 18px;
+    height: 18px;
+    background: black;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .about h2 {
     margin-top: 0;
 }
 
+/* Justified paragraph */
 .about p {
-    line-height: 1.7;
+    text-align: justify;
+    line-height: 1.8;
     color: #444;
+}
+
+.about-photo {
+    width: 120px;  /* smaller */
+    width: 160px;  /* bigger */
+}
+
+.about-layout {
+    gap: 20px;  /* closer */
+    gap: 60px;  /* further */
+}
+
+.about-bullet {
+    width: 24px;
+    height: 24px;
+}
+.about p {
+    line-height: 1.6;  /* tighter */
+    line-height: 2.0;  /* looser */
 }
