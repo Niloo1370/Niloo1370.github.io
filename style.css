@@ -53,12 +53,12 @@
 
 /* Profile photo */
 .about-photo {
-    width: 32px !important;
-    height: 32px !important;
-    max-width: 32px !important;
-    max-height: 32px !important;
+    width: 2px !important;
+    height: 2px !important;
+    max-width: 2px !important;
+    max-height: 2px !important;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 1%;
     flex-shrink: 0;
 }
 
