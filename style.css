@@ -197,7 +197,7 @@ body {
     flex-direction: row-reverse;
 }
 /* Pull Postdoc text slightly left */
-.timeline-item.postdoc {
-    gap: -50px; /* smaller than default 30px */
+.timeline-item.postdoc .timeline-content {
+    margin-right: -20px;
 }
 
