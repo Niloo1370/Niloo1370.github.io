@@ -198,6 +198,6 @@ body {
 }
 /* Pull Postdoc text slightly left */
 .timeline-item.postdoc .timeline-content {
-    margin-right: -20px;
+    margin-left: -20px;
 }
 
