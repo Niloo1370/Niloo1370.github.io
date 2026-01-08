@@ -290,13 +290,16 @@ body {
 /* Reserve space for tab content */
 .tab-panel {
     min-height: 160px; /* adjust based on longest tab */
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
 /* Hide/show tab content */
 .tab-content {
-    display: none;
+    opacity: 0;
+    transition: opacity 0.25s ease;
 }
 
 .tab-content.active {
-    display: block;
+    display: 1;
 }
