@@ -198,7 +198,14 @@ body {
 }
 /* Pull Postdoc text slightly left */
 .timeline-item.postdoc .timeline-content {
-    transform: translateX(-70px);
+    transform: translateX(-150px);
+}
+.about-preview {
+    margin-bottom: 12px;
+}
+
+.read-more-btn {
+    display: inline-block;
 }
 
 
