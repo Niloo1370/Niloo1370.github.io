@@ -198,7 +198,7 @@ body {
 }
 /* Pull Postdoc text slightly left */
 .timeline-item.postdoc .timeline-content {
-    transform: translateX(-1150px);
+    transform: translateX(-550px);
 }
 .about-preview {
     margin-bottom: 12px;
@@ -214,6 +214,48 @@ body {
 
 .about a:hover {
     color: #000;
+}
+/* Timeline tabs */
+.timeline-tabs {
+    display: flex;
+    gap: 16px;
+    margin: 12px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 6px 0;
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: #555;
+    position: relative;
+}
+
+.tab-btn.active {
+    color: #000;
+    font-weight: 600;
+}
+
+.tab-btn.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+
+/* Tab content */
+.tab-content {
+    display: none;
+    margin-top: 12px;
+}
+
+.tab-content.active {
+    display: block;
 }
 
 

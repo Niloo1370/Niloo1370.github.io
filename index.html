@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Niloofar Taherian</title>
-    <link rel="stylesheet" href="style.css?v=23">
+    <link rel="stylesheet" href="style.css?v=24">
 </head>
 <body>
 <div style="text-align:right; margin:20px;">
@@ -71,24 +71,44 @@
 
 
 
-<div class="timeline-item">
-    <div class="timeline-marker"></div>
+<div class="timeline-content">
 
-    <img src="images/PhD.JPG" alt="PhD photo" class="timeline-photo">
+    <h2>Postdoctoral Researcher</h2>
+    <h3>Max Planck Institute für Struktur und Dynamik der Materie (MPSD) · 02.2025 – 09.2025</h3>
 
-    <div class="timeline-content">
-        <div class="timeline-heading">
-    <div class="timeline-bullet"></div>
-    <h2>Doctoral Researcher</h2>
-    <h3>MPSD and University of Hamburg · 11.2019 – 02.2025</h3>
+    <!-- Local navigation tabs -->
+    <div class="timeline-tabs">
+        <button class="tab-btn active" data-tab="experience">Experience</button>
+        <button class="tab-btn" data-tab="skills">Skills</button>
+        <button class="tab-btn" data-tab="certificates">Certificates</button>
     </div>
 
+    <!-- Tab content -->
+    <div class="tab-content active" data-content="experience">
+        <p>
+            Led a five-person team, planning, organizing, and executing advanced table-top optical
+            experiments. Generated and characterized mid-infrared pump pulses and utilized Raman
+            spectroscopy to study chiral solid-state systems.
+        </p>
+    </div>
+
+    <div class="tab-content" data-content="skills">
         <ul>
-            <li>Designed, built, and executed advanced table-top optical experiments to study complex photo-induced dynamics of 
-                high Tc Cuprate superconductors (YBa2Cu3O6+x).</li>
+            <li>Ultrafast laser spectroscopy</li>
+            <li>Raman scattering (linear & circular)</li>
+            <li>Data analysis & automation (Python)</li>
         </ul>
     </div>
+
+    <div class="tab-content" data-content="certificates">
+        <ul>
+            <li>Laser Safety Training (Germany)</li>
+            <li>Advanced Cryogenics Workshop</li>
+        </ul>
+    </div>
+
 </div>
+
 <script>
 const translations = {
     en: {
@@ -150,6 +170,27 @@ button.addEventListener("click", () => {
 
 // Initial load
 setLanguage(currentLang);
+</script>
+<script>
+document.querySelectorAll(".timeline-item").forEach(item => {
+    const buttons = item.querySelectorAll(".tab-btn");
+    const contents = item.querySelectorAll(".tab-content");
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const target = btn.dataset.tab;
+
+            // deactivate all
+            buttons.forEach(b => b.classList.remove("active"));
+            contents.forEach(c => c.classList.remove("active"));
+
+            // activate selected
+            btn.classList.add("active");
+            item.querySelector(`.tab-content[data-content="${target}"]`)
+                .classList.add("active");
+        });
+    });
+});
 </script>
 
 </body>
