@@ -235,6 +235,11 @@ body {
 .about a:hover {
     color: #000;
 }
+/* Timeline t.timeline-content {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Timeline tabs */
 .timeline-tabs {
     display: flex;
@@ -268,13 +273,13 @@ body {
     background: #000;
 }
 
-/* Fixed-height content area */
+/* 🔒 Anchored content window */
 .tab-panel {
-    height: 220px;      /* 🔑 THIS LOCKS THE NAVBAR */
+    height: 220px;
     overflow-y: auto;
 }
 
-/* Tab content visibility */
+/* Tab content switching */
 .tab-content {
     display: none;
     opacity: 0;
@@ -285,14 +290,5 @@ body {
     display: block;
     opacity: 1;
 }
-.timeline-content {
-    display: flex;
-    flex-direction: column;
-}
 
-.timeline-header {
-    height: 120px;      /* locks navbar position */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
+
