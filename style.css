@@ -207,5 +207,13 @@ body {
 .read-more-btn {
     display: inline-block;
 }
+.about a {
+    color: #003366;
+    text-decoration: underline;
+}
+
+.about a:hover {
+    color: #000;
+}
 
 

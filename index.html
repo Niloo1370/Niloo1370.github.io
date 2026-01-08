@@ -100,7 +100,7 @@ const translations = {
         about_p1:
             "I went on to earn my Bachelor’s degree in Physics at the University of Isfahan between 2010 and 2014. After graduating in my hometown, I felt ready to embrace a new challenge and slightly redirect my academic path. I therefore took a one-year gap to prepare for the national entrance examination for a Master’s program in Nanotechnology. The year 2015 proved to be a pivotal period in both my personal and academic development, as I was accepted into one of the leading universities in Tehran, Tarbiat Modares University. Moving to Tehran marked my first experience living and studying in a major metropolitan environment.",
         about_p2:
-            "I completed my Master’s thesis with a high final grade (XX) and graduated in 2017. At that point, I felt prepared for a truly transformative challenge. Seeking to broaden my horizons both academically and personally, I decided to pursue a PhD abroad. In 2018, I was accepted into a doctoral program at one of the most prestigious research institutes in the world, the Max Planck Institute for the Structure and Dynamics of Matter. Due to visa constraints, my move to Germany was delayed until November 2019, but I ultimately joined the research group led by Andrea Cavalleri, where I became deeply immersed in the fields of ultrafast lasers and superconductivity.",
+            "I completed my Master’s thesis with a high final grade (XX) and graduated in 2017. At that point, I felt prepared for a truly transformative challenge. Seeking to broaden my horizons both academically and personally, I decided to pursue a PhD abroad. In 2018, I was accepted into a doctoral program at one of the most prestigious research institutes in the world, the Max Planck Institute for the Structure and Dynamics of Matter. Due to visa constraints, my move to Germany was delayed until November 2019, but I ultimately joined the research group led by <a href="https://qcmd.mpsd.mpg.de/" target="_blank" rel="noopener noreferrer"> Andrea Cavalleri </a>, where I became deeply immersed in the fields of ultrafast lasers and superconductivity.",
         about_p3:
             "In May 2025, I successfully defended my PhD thesis with the highest possible grade (1.0). I subsequently continued in the same group as a postdoctoral researcher until September 2025. At that point, I recognized that it was time to move forward, explore new directions, and seek the next stage of my professional journey.",
         
@@ -114,7 +114,7 @@ const translations = {
         about_p1:
             "Anschließend absolvierte ich von 2010 bis 2014 meinen Bachelorstudiengang in Physik an der Universität Isfahan. Nach meinem Abschluss in meiner Heimatstadt fühlte ich mich bereit, eine neue Herausforderung anzunehmen und meinen akademischen Weg leicht neu auszurichten. Daher legte ich ein Jahr Pause ein, um mich auf die nationale Aufnahmeprüfung für ein Masterstudium im Bereich Nanotechnologie vorzubereiten. Das Jahr 2015 stellte sowohl persönlich als auch akademisch eine entscheidende Phase dar, da ich an einer der führenden Universitäten Teherans, der Tarbiat-Modares-Universität, angenommen wurde. Der Umzug nach Teheran bedeutete meine erste Erfahrung des Lebens und Studiums in einer großen Metropole.",
         about_p2:
-            "Ich schloss meine Masterarbeit mit einer hohen Abschlussnote (XX) ab und graduierte im Jahr 2017. Zu diesem Zeitpunkt fühlte ich mich bereit für eine wirklich transformative Herausforderung. Mit dem Ziel, meinen Horizont sowohl akademisch als auch persönlich zu erweitern, entschied ich mich für eine Promotion im Ausland. Im Jahr 2018 wurde ich in ein Promotionsprogramm an einem der renommiertesten Forschungsinstitute der Welt aufgenommen, dem Max-Planck-Institut für Struktur und Dynamik der Materie. Aufgrund von Visabeschränkungen verzögerte sich mein Umzug nach Deutschland bis November 2019, doch schließlich trat ich der Arbeitsgruppe von Andrea Cavalleri bei, in der ich mich intensiv mit den Forschungsfeldern der ultraschnellen Lasertechnologien und der Supraleitung beschäftigte.",
+            "Ich schloss meine Masterarbeit mit einer hohen Abschlussnote (XX) ab und graduierte im Jahr 2017. Zu diesem Zeitpunkt fühlte ich mich bereit für eine wirklich transformative Herausforderung. Mit dem Ziel, meinen Horizont sowohl akademisch als auch persönlich zu erweitern, entschied ich mich für eine Promotion im Ausland. Im Jahr 2018 wurde ich in ein Promotionsprogramm an einem der renommiertesten Forschungsinstitute der Welt aufgenommen, dem Max-Planck-Institut für Struktur und Dynamik der Materie. Aufgrund von Visabeschränkungen verzögerte sich mein Umzug nach Deutschland bis November 2019, doch schließlich trat ich der Arbeitsgruppe von <a href="https://qcmd.mpsd.mpg.de/" target="_blank" rel="noopener noreferrer"> Andrea Cavalleri </a> bei, in der ich mich intensiv mit den Forschungsfeldern der ultraschnellen Lasertechnologien und der Supraleitung beschäftigte.",
         about_p3:
             "Im Mai 2025 verteidigte ich meine Dissertation erfolgreich mit der bestmöglichen Note (1,0). Anschließend arbeitete ich bis September 2025 als Postdoktorandin in derselben Forschungsgruppe. Zu diesem Zeitpunkt erkannte ich, dass es an der Zeit war, neue Wege einzuschlagen, weitere Perspektiven zu erkunden und den nächsten Abschnitt meines beruflichen Werdegangs zu gestalten.",
         read_more: "Mehr lesen ↓",
@@ -127,13 +127,14 @@ let currentLang = localStorage.getItem("lang") || "en";
 function setLanguage(lang) {
     document.querySelectorAll("[data-i18n]").forEach(el => {
         const key = el.dataset.i18n;
-        el.textContent = translations[lang][key];
+        el.innerHTML = translations[lang][key];
     });
 
     document.documentElement.lang = lang;
     localStorage.setItem("lang", lang);
     currentLang = lang;
 }
+
 
 // Read-more toggle (unchanged behavior)
 const button = document.querySelector(".read-more-btn");
