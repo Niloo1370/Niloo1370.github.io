@@ -273,11 +273,12 @@ body {
     background: #000;
 }
 
-/* 🔒 Anchored content window */
 .tab-panel {
     height: 220px;
-    overflow-y: auto;
+    overflow-y: scroll;           /* 👈 FORCE scrollbar always */
+    scrollbar-gutter: stable;     /* 👈 PREVENT layout shift */
 }
+
 
 /* Tab content switching */
 .tab-content {
