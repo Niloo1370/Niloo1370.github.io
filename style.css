@@ -282,4 +282,21 @@ body {
     max-width: 100%;
     margin: 0 auto;
 }
+/* Tabs container stays fixed */
+.timeline-tabs {
+    margin-bottom: 12px;
+}
 
+/* Reserve space for tab content */
+.tab-panel {
+    min-height: 160px; /* adjust based on longest tab */
+}
+
+/* Hide/show tab content */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
