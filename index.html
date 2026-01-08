@@ -5,6 +5,13 @@
     <title>Niloofar Taherian</title>
     <link rel="stylesheet" href="style.css?v=19">
 </head>
+
+<div style="text-align:right; margin:20px;">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('de')">Deutsch</button>
+</div>
+
+
 <body>
 <section class="about">
     <div class="about-layout">
@@ -17,58 +24,18 @@
 
     <div class="about-heading">
         <div class="about-bullet"></div>
-        <h2>About Me</h2>
+        <h2 data-i18n="about_title"></h2>
+    <div class="about-more">
+    <p data-i18n="about_p1"></p>
+    <p data-i18n="about_p2"></p>
+    <p data-i18n="about_p3"></p>
+    <p data-i18n="about_p4"></p>
+    <p data-i18n="about_p5"></p>
     </div>
-            
-            <!-- Always visible preview -->
-                <p>
-                I was born and raised in one of the most historically rich cities in the world, Isfahan,
-                in the heart of Iran. From a very young age, around six or seven, I fell in love with the
-                magic of the stars in the night sky, much like many other children.
-               </p>
-            <!-- Hidden / expandable content -->
-            <div class="about-more">
-
-                <p>
-                    What began as childhood curiosity, however, gradually developed into a clear and
-                    lasting ambition. I pursued this dream with patience and determination, completing
-                    high school in mathematics and physics with a final grade of XX, ranking among the
-                    top students of my year.
-                </p>
-
-                <p>
-                    I went on to earn my Bachelor’s degree in Physics at the University of Isfahan between
-                    2010 and 2014. After graduating in my hometown, I felt ready to embrace a new challenge
-                    and slightly redirect my academic path.
-                </p>
-
-                <p>
-                    I therefore took a one-year gap to prepare for the national entrance examination for a
-                    Master’s program in Nanotechnology. The year 2015 proved to be a pivotal period in both
-                    my personal and academic development, as I was accepted into Tarbiat Modares University
-                    in Tehran.
-                </p>
-
-                <p>
-                    In 2018, I was accepted into a PhD program at the Max Planck Institute for the Structure
-                    and Dynamics of Matter. Due to visa constraints, my move to Germany was delayed until
-                    November 2019, but I ultimately joined the research group led by <a href="https://qcmd.mpsd.mpg.de/" target="_blank" rel="noopener noreferrer">
-                    Andrea Cavalleri
-                    </a> where I became deeply immersed in the fields of ultrafast lasers and superconductivity.
-                </p>
-
-                <p>
-                    In May 2025, I successfully defended my PhD thesis with the highest possible grade (1.0).
-                    I subsequently continued in the same group as a postdoctoral researcher until September
-                    2025. At that point, I recognized that it was time to move forward, explore new
-                    directions, and seek the next stage of my professional journey.
-                </p>
-            </div>
 
             <!-- Toggle button -->
-            <button class="read-more-btn" aria-expanded="false">
-                Read more ↓
-            </button>
+            <button class="read-more-btn" aria-expanded="false" data-i18n="read_more"></button>
+
         </div>
 
     </div>
@@ -122,17 +89,73 @@
     </div>
 </div>
 <script>
-    const button = document.querySelector('.read-more-btn');
-    const moreContent = document.querySelector('.about-more');
+const translations = {
+    en: {
+        about_title: "About Me",
+        about_preview:
+            "I was born and raised in one of the most historically rich cities in the world, Isfahan, in the heart of Iran.",
+        about_p1:
+            "What began as childhood curiosity gradually developed into a clear and lasting ambition.",
+        about_p2:
+            "I went on to earn my Bachelor’s degree in Physics at the University of Isfahan between 2010 and 2014.",
+        about_p3:
+            "I therefore took a one-year gap to prepare for the national entrance examination for a Master’s program.",
+        about_p4:
+            "In 2018, I was accepted into a PhD program at the Max Planck Institute for the Structure and Dynamics of Matter.",
+        about_p5:
+            "In May 2025, I successfully defended my PhD thesis with the highest possible grade (1.0).",
+        read_more: "Read more ↓",
+        read_less: "Read less ↑"
+    },
+    de: {
+        about_title: "Über mich",
+        about_preview:
+            "Ich wurde in einer der geschichtsträchtigsten Städte der Welt geboren und aufgezogen – Isfahan, im Herzen Irans.",
+        about_p1:
+            "Was als kindliche Neugier begann, entwickelte sich allmählich zu einer klaren und dauerhaften Ambition.",
+        about_p2:
+            "Ich erwarb meinen Bachelorabschluss in Physik an der Universität Isfahan zwischen 2010 und 2014.",
+        about_p3:
+            "Anschließend nahm ich mir ein Jahr Zeit, um mich auf die nationale Aufnahmeprüfung vorzubereiten.",
+        about_p4:
+            "2018 wurde ich in ein Promotionsprogramm am Max-Planck-Institut für Struktur und Dynamik der Materie aufgenommen.",
+        about_p5:
+            "Im Mai 2025 verteidigte ich erfolgreich meine Doktorarbeit mit der Bestnote 1,0.",
+        read_more: "Mehr lesen ↓",
+        read_less: "Weniger lesen ↑"
+    }
+};
 
-    button.addEventListener('click', () => {
-        const expanded = button.getAttribute('aria-expanded') === 'true';
+let currentLang = localStorage.getItem("lang") || "en";
 
-        button.setAttribute('aria-expanded', !expanded);
-        moreContent.classList.toggle('open');
-
-        button.textContent = expanded ? 'Read more ↓' : 'Read less ↑';
+function setLanguage(lang) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.dataset.i18n;
+        el.textContent = translations[lang][key];
     });
+
+    document.documentElement.lang = lang;
+    localStorage.setItem("lang", lang);
+    currentLang = lang;
+}
+
+// Read-more toggle (unchanged behavior)
+const button = document.querySelector(".read-more-btn");
+const moreContent = document.querySelector(".about-more");
+
+button.addEventListener("click", () => {
+    const expanded = button.getAttribute("aria-expanded") === "true";
+    button.setAttribute("aria-expanded", !expanded);
+    moreContent.classList.toggle("open");
+
+    button.textContent = expanded
+        ? translations[currentLang].read_more
+        : translations[currentLang].read_less;
+});
+
+// Initial load
+setLanguage(currentLang);
 </script>
+
 </body>
 </html>
