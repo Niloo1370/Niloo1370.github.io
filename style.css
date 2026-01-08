@@ -5,6 +5,26 @@ body {
     line-height: 1.6;
     color: #333;
 }
+/* Global layout lock */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+/* Centered fixed-width content */
+.page-container {
+    max-width: 1100px;   /* adjust if you want wider/narrower */
+    margin: 0 auto;
+    padding: 0 20px;     /* breathing room on small screens */
+}
+
 .timeline-heading {
     display: flex;
     align-items: center;
@@ -198,7 +218,7 @@ body {
 }
 /* Pull Postdoc text slightly left */
 .timeline-item.postdoc .timeline-content {
-    transform: translateX(-250px);
+    transform: translateX(0px);
 }
 .about-preview {
     margin-bottom: 12px;
@@ -258,4 +278,8 @@ body {
     display: block;
 }
 
+.timeline {
+    max-width: 100%;
+    margin: 0 auto;
+}
 
