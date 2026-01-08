@@ -291,7 +291,6 @@ body {
 .tab-panel {
     min-height: 160px; /* adjust based on longest tab */
     overflow-y: auto;
-    overflow-x: auto;
 }
 
 /* Hide/show tab content */
