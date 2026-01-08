@@ -274,18 +274,33 @@ body {
 }
 
 .tab-panel {
+    position: relative;
     height: 220px;
-    overflow-y: scroll;           /* 👈 FORCE scrollbar always */
-    scrollbar-gutter: stable;     /* 👈 PREVENT layout shift */
+    padding-right: 10px;          /* choose once */
 }
 
 
-/* Tab content switching */
+
 .tab-content {
-    display: none;
+    position: absolute;     /* 🔑 removes reflow */
+    top: 0;
+    left: 0;
+    width: 100%;
+
     opacity: 0;
+    pointer-events: none;
     transition: opacity 0.25s ease;
 }
+
+
+.tab-content.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+.tab-content p {
+    margin-top: 0;
+}
+
 
 .tab-content.active {
     display: block;
