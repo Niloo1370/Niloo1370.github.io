@@ -285,3 +285,14 @@ body {
     display: block;
     opacity: 1;
 }
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-header {
+    height: 120px;      /* locks navbar position */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
