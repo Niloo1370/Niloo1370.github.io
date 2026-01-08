@@ -268,37 +268,20 @@ body {
     background: #000;
 }
 
-/* Tab content */
-.tab-content {
-    display: none;
-    margin-top: 12px;
-}
-
-.tab-content.active {
-    display: block;
-}
-
-.timeline {
-    max-width: 100%;
-    margin: 0 auto;
-}
-/* Tabs container stays fixed */
-.timeline-tabs {
-    margin-bottom: 12px;
-}
-
-/* Reserve space for tab content */
+/* Fixed-height content area */
 .tab-panel {
-    min-height: 160px; /* adjust based on longest tab */
+    height: 220px;      /* 🔑 THIS LOCKS THE NAVBAR */
     overflow-y: auto;
 }
 
-/* Hide/show tab content */
+/* Tab content visibility */
 .tab-content {
+    display: none;
     opacity: 0;
     transition: opacity 0.25s ease;
 }
 
 .tab-content.active {
-    display: 1;
+    display: block;
+    opacity: 1;
 }
