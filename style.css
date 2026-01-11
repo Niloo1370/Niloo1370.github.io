@@ -274,7 +274,7 @@ body {
 }
 
 .tab-panel {
-    position: relative;
+    position: absolute;
     height: auto;
     padding-right: 10px;          /* choose once */
 }
