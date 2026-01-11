@@ -282,11 +282,16 @@ body {
 
 
 .tab-content {
-    position: relative;
-    display: none;
+    position: relative;     /* 🔑 removes reflow */
+    top: 0;
+    left: 0;
+    width: 100%;
+
     opacity: 0;
+    pointer-events: none;
     transition: opacity 0.25s ease;
 }
+
 
 .tab-content.active {
     opacity: 1;
