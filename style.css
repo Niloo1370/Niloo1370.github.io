@@ -307,4 +307,7 @@ body {
     opacity: 1;
 }
 
+.tab-content[data-content="About"] p {
+    text-align: justify;
+}
 
