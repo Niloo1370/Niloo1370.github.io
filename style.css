@@ -326,3 +326,6 @@ body {
     flex: 1;
 }
 
+.tab-content li {
+    text-align: justify;
+}
