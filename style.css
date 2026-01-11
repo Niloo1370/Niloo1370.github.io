@@ -317,4 +317,12 @@ body {
 .tab-content ul:first-child {
     margin-top: 0;
 }
+.two-column {
+    display: flex;
+    gap: 30px;
+}
+
+.two-column .column {
+    flex: 1;
+}
 
