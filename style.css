@@ -265,7 +265,7 @@ body {
 
 .tab-btn.active::after {
     content: "";
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: -6px;
     width: 100%;
@@ -274,7 +274,7 @@ body {
 }
 
 .tab-panel {
-    position: absolute;
+    position: relative;
     height: auto;
     padding-right: 10px;          /* choose once */
 }
@@ -282,7 +282,7 @@ body {
 
 
 .tab-content {
-    position: absolute;     /* 🔑 removes reflow */
+    position: relative;     /* 🔑 removes reflow */
     top: 0;
     left: 0;
     width: 100%;
