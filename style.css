@@ -274,7 +274,7 @@ body {
 }
 
 .tab-panel {
-    position: relative;
+    position: absolute;
     height: auto;
     padding-right: 10px;          /* choose once */
 }
@@ -282,7 +282,7 @@ body {
 
 
 .tab-content {
-    position: relative;     /* 🔑 removes reflow */
+    position: absolute;     /* 🔑 removes reflow */
     top: 0;
     left: 0;
     width: 100%;
