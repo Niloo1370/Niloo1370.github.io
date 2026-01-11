@@ -286,16 +286,15 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-
-    opacity: 0;
-    pointer-events: none;
     transition: opacity 0.25s ease;
+    display: none;
 }
 
 
 .tab-content.active {
     opacity: 1;
     pointer-events: auto;
+    display: block;
 }
 .tab-content p {
     margin-top: 0;
@@ -309,5 +308,13 @@ body {
 
 .tab-content[data-content="About"] p {
     text-align: justify;
+}
+
+.tab-content p:first-child {
+    margin-top: 0;
+}
+
+.tab-content ul:first-child {
+    margin-top: 0;
 }
 
