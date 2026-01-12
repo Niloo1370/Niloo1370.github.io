@@ -118,6 +118,50 @@ body {
     margin: 18px 0 16px;
     background: linear-gradient(to right, transparent, #888, transparent);
 }
+/* Mini navbar */
+.current-tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.current-tab {
+    background: none;
+    border: none;
+    padding: 6px 0;
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: #555;
+    position: relative;
+}
+
+.current-tab.active {
+    color: #000;
+    font-weight: 600;
+}
+
+.current-tab.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+
+/* Tab content */
+.current-tab-content {
+    display: none;
+}
+
+.current-tab-content.active {
+    display: block;
+}
+
+
+
 
 /* Hover effect for timeline sections */
 .timeline-item {

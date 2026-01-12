@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Dr. rer nat. Niloofar Taherian</title>
-    <link rel="stylesheet" href="style.css?v=55">
+    <link rel="stylesheet" href="style.css?v=56">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
@@ -12,7 +12,7 @@
     <button onclick="setLanguage('en')">English</button>
     <button onclick="setLanguage('de')">Deutsch</button>
 </div>
-
+<!--
 <section class="current">
     <div class="current-layout">
 
@@ -29,7 +29,7 @@
                 capabilities.            
             </p>
 
-            <!-- Fancy separator -->
+            
             <div class="current-divider"></div>
 
             <p><strong>Languages:</strong> Farsi (native), English (C2), German (C1)</p>
@@ -40,7 +40,34 @@
 
     </div>
 </section>
+-->
+<!-- Fancy separator -->
+<div class="current-divider"></div>
 
+<!-- Mini navbar -->
+<div class="current-tabs">
+    <button class="current-tab active" data-tab="languages">Languages</button>
+    <button class="current-tab" data-tab="programming">Programming</button>
+    <button class="current-tab" data-tab="tools">Tools</button>
+    <button class="current-tab" data-tab="software">Software</button>
+</div>
+
+<!-- Tab content -->
+<div class="current-tab-content active" data-content="languages">
+    <p><strong>Languages:</strong> Farsi (native), English (C2), German (C1)</p>
+</div>
+
+<div class="current-tab-content" data-content="programming">
+    <p><strong>Programming languages:</strong> Python, MATLAB, SQL</p>
+</div>
+
+<div class="current-tab-content" data-content="tools">
+    <p><strong>Tools:</strong> Visual Studio Code, Jupyter Notebook, pgAdmin, Git (GitHub)</p>
+</div>
+
+<div class="current-tab-content" data-content="software">
+    <p><strong>Software:</strong> LaTeX, Adobe Illustrator, Microsoft Office (PowerPoint, Word, Excel)</p>
+</div>
 
 
 
@@ -612,6 +639,19 @@ document.querySelectorAll(".timeline-item").forEach(item => {
             item.querySelector(`.tab-content[data-content="${target}"]`)
                 .classList.add("active");
         });
+    });
+});
+</script>
+<script>
+document.querySelectorAll(".current-tab").forEach(button => {
+    button.addEventListener("click", () => {
+        const parent = button.closest(".current-text");
+
+        parent.querySelectorAll(".current-tab").forEach(btn => btn.classList.remove("active"));
+        parent.querySelectorAll(".current-tab-content").forEach(content => content.classList.remove("active"));
+
+        button.classList.add("active");
+        parent.querySelector(`[data-content="${button.dataset.tab}"]`).classList.add("active");
     });
 });
 </script>
