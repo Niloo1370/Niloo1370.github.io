@@ -399,11 +399,22 @@ body {
     color: #333;
 }
 /* Shared hover zoom effect for profile & timeline photos */
+/* Shared hover zoom effect for profile, timeline & current photos */
 .about-photo,
-.timeline-photo {
-    transition: transform 0.3s ease;
+.timeline-photo,
+.current-photo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
+
+/* Zoom on hover */
+.about-photo:hover,
+.timeline-photo:hover,
+.current-photo:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
 
 /* Zoom on hover */
 .about-photo:hover,
