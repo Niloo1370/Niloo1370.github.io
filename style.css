@@ -331,7 +331,6 @@ body {
 .tab-content li {
     text-align: justify;
 }
-.tab-content p {
+.tab-content[data-content="Project"] p {
     text-align: justify;
-    hyphens: auto;
 }
