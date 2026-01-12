@@ -235,10 +235,12 @@ body {
 .about a:hover {
     color: #000;
 }
-/* Timeline t.timeline-content {
+/* Timeline */
+.timeline-content {
     display: flex;
     flex-direction: column;
 }
+
 
 /* Timeline tabs */
 .timeline-tabs {
