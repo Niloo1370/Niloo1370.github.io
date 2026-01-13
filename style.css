@@ -301,8 +301,8 @@ body {
     text-align: justify;
 }
 .contact-section {
-    background: #68a5eb; /* deep blue-gray */
-    color: #0e1144;
+    background: #000000; /* deep blue-gray */
+    color: #ffffff;
     padding: 60px 20px;
     margin-top: 80px;
 }
@@ -342,16 +342,16 @@ body {
 
 .contact-item i {
     font-size: 1.2rem;
-    color: #0454ff96; /* soft accent */
+    color: #ffffff; /* soft accent */
 }
 
 .contact-item a {
-    color: #0c0e3a;
+    color: #ffffff;
     text-decoration: underline;
 }
 
 .contact-item a:hover {
-    color: #0c0e3a;
+    color: #ffffff;
 }
 
 .contact-map {
@@ -370,7 +370,7 @@ body {
 .about {
     max-width: 1000px;
     margin: 0 auto 80px auto;
-    background: rgba(155, 192, 228, 0.685);
+    background: #777fa172;
     padding: 20px 24px;
 
     border: 1.5px solid rgb(0, 7, 13);
