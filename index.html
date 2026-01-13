@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Niloofar Taherian</title>
-    <link rel="stylesheet" href="style.css?v=63">
+    <link rel="stylesheet" href="style.css?v=64">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
@@ -16,7 +16,15 @@
 <section class="current">
     <div class="current-layout">
 
-        <img src="images/portfolio.jpg" alt="Current status photo" class="current-photo">
+        <div class="photo-with-cv">
+    <img src="images/portfolio.jpg" alt="Current status photo" class="current-photo">
+
+    <div class="cv-links">
+        <p data-i18n="cv_title"></p>
+        <!---<a href="files/CV_Niloofar_Taherian_EN.pdf" target="_blank" data-i18n="cv_en"></a>-->
+        <a href="CV/CV_DEU_Niloofar Taherian H..pdf" target="_blank" data-i18n="cv_de"></a>
+    </div>
+</div>
 
         <div class="current-text">
             <h2>Dr. rer nat. Niloofar Taherian H.</h2>
@@ -603,6 +611,7 @@ const translations = {
         read_more: "Read more ↓",
         read_less: "Read less ↑"
     },
+
     de: {
         about_title: "Über mich",
         about_preview:
@@ -616,6 +625,15 @@ const translations = {
         read_more: "Mehr lesen ↓",
         read_less: "Weniger lesen ↑"
     }
+    cv_title: "Curriculum Vitae",
+    cv_en: "Download CV (English)",
+    cv_de: "Download CV (German)",
+
+    cv_title: "Lebenslauf",
+    cv_en: "Lebenslauf herunterladen (Englisch)",
+    cv_de: "Lebenslauf herunterladen (Deutsch)",
+
+
 };
 
 let currentLang = localStorage.getItem("lang") || "en";
@@ -683,6 +701,8 @@ document.querySelectorAll(".current-tab").forEach(button => {
     });
 });
 </script>
+
+
 
 </body>
 </html>
