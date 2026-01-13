@@ -445,7 +445,7 @@ body {
 }
 
 .about a:hover {
-    color: #333;
+    color: #262331;
 }
 /* Shared hover zoom effect for profile & timeline photos */
 /* Shared hover zoom effect for profile, timeline & current photos */
@@ -516,5 +516,15 @@ body {
 }
 
 .cv-links a:hover {
+    text-decoration: underline;
+}
+.cert-link {
+    margin-left: 8px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #555;
+}
+
+.cert-link:hover {
     text-decoration: underline;
 }
