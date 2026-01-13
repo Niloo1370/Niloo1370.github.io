@@ -82,7 +82,7 @@ body {
 .current {
     max-width: 1000px;
     margin: 0 auto 80px auto;
-    background: #869bf9; /* slightly different from About */
+    background: #869bf972; /* slightly different from About */
     padding: 24px;
     border-radius: 8px;
     border: 1.5px solid #bbb;
