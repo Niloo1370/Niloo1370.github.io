@@ -36,12 +36,12 @@
             
             <div class="current-divider"></div>
 
-            <p><strong data-i18n="label_languages"></strong> Farsi (native), English (C2), German (C1)</p>
-            <p><strong data-i18n="label_programming"></strong> Python, MATLAB, SQL
+            <p><strong data-i18n="label_languages"></strong> </p>
+            <p><strong data-i18n="label_programming"></strong>
             <a href="certificate/SQL_Udemy_Niloofar Taherian.pdf" target="_blank" class="cert-link">(SQL Certificate)</a></p>
-            <p><strong data-i18n="label_tools"></strong> Visual Studio Code, Jupyter Notebook, pgAdmin, Git (Github)
+            <p><strong data-i18n="label_tools"></strong> 
             <a href="certificate/Git & Github_Udemy_Niloofar Taherian.pdf" target="_blank" class="cert-link">(Git Certificate)</a></p>
-            <p><strong data-i18n="label_software"></strong> LaTeX, Adobe Illustrator, Microsoft Office (PowerPoint, Word, Excel)</p>
+            <p><strong data-i18n="label_software"></strong></p>
         </div>
 
     </div>
@@ -184,7 +184,7 @@
                            rel="noopener noreferrer">
                             PhD Thesis (Online)
                         </a>)</p>
-                <p> (Grade: 1.0 with distinction)</p>
+                <p data-i18n="phd_thesis_grade"></p>
 
 
                 <p>
@@ -264,7 +264,9 @@
 
             <div class="tab-content active" data-content="Overview">
 
-                <p><strong data-i18n="master_thesis_label"></strong> "Electrochemical Synthesis of Ni-Mn-Sn Ferromagnetic Shape Memory Alloy Nanostructure"</p> <p>(Grade: 19.5 out of 20)</p>
+                <p><strong data-i18n="master_thesis_label"></strong> "Electrochemical Synthesis of Ni-Mn-Sn Ferromagnetic Shape Memory Alloy Nanostructure"</p> 
+                <p data-i18n="master_thesis_grade"></p>
+
                 <div class="two-column">
 
                     <div class="column">
@@ -450,7 +452,8 @@
 <section class="contact-section">
     <div class="contact-container">
 
-        <h2>Contact Info</h2>
+        <h2 data-i18n="contact_title"></h2>
+
 
         <div class="contact-layout">
 
@@ -492,6 +495,11 @@
 <script>
 const translations = {
     en: {
+        tab_overview: "Overview",
+        tab_project: "Project",
+        tab_engagement: "Engagement",
+        tab_publication: "Publications",
+
         current_title: "Current",
         current_intro: "As a PhD graduate in experimental physics, I bring a wealth of hands-on experience in optics, laser, cryogenics, sample preparation as well as analytical expertise in data analysis, simulation and modelling. I have proven my ability to lead complex projects, exercising strong and effective communication across diverse teams. For the next step in my career, I am looking for a position in which I can apply my expertise and expand my professional capabilities.",
 
@@ -629,9 +637,8 @@ const translations = {
         <li>Knowledge-sharing and storytelling</li>
         `,
         work_project_p1: "The Avid Spadana Foundation offered educational programs in collaboration with elementary schools, focusing on hands-on science experiments for children aged six to eleven. The main goal was to help students understand and interact with the physical phenomena around them. As a teacher, my role was to introduce the concept of each experiment in simple terms, set up the experimental materials, and guide the children through the process. At the end of each session, we held a brainstorming discussion to help them better understand how the experiment related to their everyday lives. This valuable experience helped me develop a clear and accessible way of communicating scientific concepts to a general audience.",
-        work_project_p2: "I also offered private tutoring in mathematics, physics, and English for high school students. This experience was deeply rewarding, as it allowed me to share my knowledge while further strengthening my communication skills and deepening my own understanding of the subjects."
+        work_project_p2: "I also offered private tutoring in mathematics, physics, and English for high school students. This experience was deeply rewarding, as it allowed me to share my knowledge while further strengthening my communication skills and deepening my own understanding of the subjects.",
 
-        ,
         about_title: "About Me",
         about_preview: "I was born and raised in one of the most historically rich cities in the world, Isfahan, in the heart of Iran. From a very young age—around six or seven—I fell in love with the magic of the stars in the night sky, much like many other children. What began as childhood curiosity, however, gradually developed into a clear and lasting ambition. I pursued this dream with patience and determination, completing high school in mathematics and physics, ranking among the top students of my year.",
         about_p1: "I went on to earn my Bachelor’s degree in Physics at the University of Isfahan between 2010 and 2014. After graduating in my hometown, I felt ready to embrace a new challenge and slightly redirect my academic path. I therefore took a one-year gap to prepare for the national entrance examination for a Master’s program in Nanotechnology. The year 2015 proved to be a pivotal period in both my personal and academic development, as I was accepted into one of the leading universities in Tehran, Tarbiat Modares University. Moving to Tehran marked my first experience living and studying in a major metropolitan environment.",
@@ -639,10 +646,21 @@ const translations = {
         about_p3: "IIn May 2025, I successfully defended my PhD thesis. I subsequently continued in the same group as a postdoctoral researcher until September 2025. At that point, I recognized that it was time to move forward, explore new directions, and seek the next stage of my professional journey.",
 
         read_more: "Read more ↓",
-        read_less: "Read less ↑"
+        read_less: "Read less ↑",
+
+        phd_thesis_grade: "(Grade: 1.0 with distinction)",
+        master_thesis_grade: "(Grade: 19.5 out of 20)",
+        contact_title: "Contact Info"
+
     },
 
     de: {
+
+        tab_overview: "Übersicht",
+        tab_project: "Projekt",
+        tab_engagement: "Engagement",
+        tab_publication: "Publikationen",
+
         current_title: "Aktuell",
         current_intro: "Als promovierte Physikerin im Bereich der experimentellen Physik verfüge ich über umfangreiche praktische Erfahrung in den Bereichen Optik, Lasertechnologie, Kryotechnik und Probenpräparation sowie über fundierte analytische Kompetenzen in der Datenanalyse, Simulation und Modellierung. Ich habe meine Fähigkeit unter Beweis gestellt, komplexe Projekte zu leiten und dabei effektiv mit interdisziplinären Teams zu kommunizieren. Für den nächsten Schritt meiner beruflichen Laufbahn suche ich eine Position, in der ich meine Expertise gezielt einsetzen und weiter ausbauen kann.",    
         label_languages: "Sprachen: Persisch (Muttersprache), Englisch (C2), Deutsch (C1)",
@@ -777,9 +795,8 @@ const translations = {
         <li>Wissensvermittlung und Storytelling</li>
         `,
         work_project_p1: "Die Avid Spadana Foundation bot in Zusammenarbeit mit Grundschulen Bildungsprogramme mit dem Schwerpunkt auf praxisorientierten naturwissenschaftlichen Experimenten für Kinder im Alter von sechs bis elf Jahren an. Ziel war es, den Schülerinnen und Schülern zu helfen, physikalische Phänomene aus ihrem Alltag besser zu verstehen. Als Lehrerin bestand meine Aufgabe darin, die Konzepte in einfachen Worten zu erklären, die Experimente vorzubereiten und die Kinder während der Durchführung zu begleiten. Am Ende jeder Sitzung führten wir eine gemeinsame Reflexionsrunde durch, um den Bezug zum Alltag herzustellen. Diese Erfahrung half mir, eine verständliche und zugängliche Sprache zur Vermittlung wissenschaftlicher Inhalte zu entwickeln.",
-        work_project_p2: "Darüber hinaus gab ich privaten Nachhilfeunterricht in Mathematik, Physik und Englisch für Schülerinnen und Schüler der Oberstufe. Diese Tätigkeit war für mich besonders erfüllend, da sie mir ermöglichte, mein Wissen weiterzugeben, meine Kommunikationsfähigkeiten zu stärken und mein eigenes fachliches Verständnis zu vertiefen."
+        work_project_p2: "Darüber hinaus gab ich privaten Nachhilfeunterricht in Mathematik, Physik und Englisch für Schülerinnen und Schüler der Oberstufe. Diese Tätigkeit war für mich besonders erfüllend, da sie mir ermöglichte, mein Wissen weiterzugeben, meine Kommunikationsfähigkeiten zu stärken und mein eigenes fachliches Verständnis zu vertiefen.",
 
-        ,
         about_title: "Über mich",
         about_preview: "Ich wurde in einer der historisch reichsten Städte der Welt geboren und bin dort aufgewachsen: in Isfahan, im Herzen des Iran. Schon in sehr jungen Jahren – im Alter von etwa sechs oder sieben Jahren – faszinierte mich die Magie der Sterne am Nachthimmel, wie wohl viele Kinder sie erleben. Was zunächst als kindliche Neugier begann, entwickelte sich jedoch allmählich zu einer klaren und nachhaltigen Leidenschaft. Mit Geduld und Zielstrebigkeit verfolgte ich diesen Traum und schloss die Schule mit dem Schwerpunkt Mathematik und Physik, wobei ich zu den besten Schülerinnen meines Jahrgangs zählte.",
         about_p1: "Anschließend absolvierte ich von 2010 bis 2014 meinen Bachelorstudiengang in Physik an der Universität Isfahan. Nach meinem Abschluss in meiner Heimatstadt fühlte ich mich bereit, eine neue Herausforderung anzunehmen und meinen akademischen Weg leicht neu auszurichten. Daher legte ich ein Jahr Pause ein, um mich auf die nationale Aufnahmeprüfung für ein Masterstudium im Bereich Nanotechnologie vorzubereiten. Das Jahr 2015 stellte sowohl persönlich als auch akademisch eine entscheidende Phase dar, da ich an einer der führenden Universitäten Teherans, der Tarbiat-Modares-Universität, angenommen wurde. Der Umzug nach Teheran bedeutete meine erste Erfahrung des Lebens und Studiums in einer großen Metropole.",
@@ -787,7 +804,13 @@ const translations = {
         about_p3: "Im Mai 2025 verteidigte ich meine Dissertation erfolgreich. Anschließend arbeitete ich bis September 2025 als Postdoktorandin in derselben Forschungsgruppe. Zu diesem Zeitpunkt erkannte ich, dass es an der Zeit war, neue Wege einzuschlagen, weitere Perspektiven zu erkunden und den nächsten Abschnitt meines beruflichen Werdegangs zu gestalten.",
 
         read_more: "Mehr lesen ↓",
-        read_less: "Weniger lesen ↑"
+        read_less: "Weniger lesen ↑",
+
+        phd_thesis_grade: "(Note: 1,0 mit Auszeichnung)",
+        master_thesis_grade: "(Note: 19,5 von 20)",
+        contact_title: "Kontaktinfo",
+
+
 
     }
 };
