@@ -39,7 +39,7 @@
             <p><strong data-i18n="label_languages"></strong> Farsi (native), English (C2), German (C1)</p>
             <p><strong data-i18n="label_programming"></strong> Python, MATLAB, SQL
             <a href="certificate/SQL_Udemy_Niloofar Taherian.pdf" target="_blank" class="cert-link">(SQL Certificate)</a></p>
-            <p><strong data-i18n="Label_tools"></strong> Visual Studio Code, Jupyter Notebook, pgAdmin, Git (Github)
+            <p><strong data-i18n="label_tools"></strong> Visual Studio Code, Jupyter Notebook, pgAdmin, Git (Github)
             <a href="certificate/Git & Github_Udemy_Niloofar Taherian.pdf" target="_blank" class="cert-link">(Git Certificate)</a></p>
             <p><strong data-i18n="label_software"></strong> LaTeX, Adobe Illustrator, Microsoft Office (PowerPoint, Word, Excel)</p>
         </div>
@@ -116,8 +116,8 @@
 
         <!-- Tabs (STABLE POSITION) -->
         <div class="timeline-tabs">
-            <button class="tab-btn active" data-tab="Overview" data-i18n="tab_overview"></button>
-            <button class="tab-btn" data-tab="Project" data-i18n="tab_project"></button>
+            <button class="tab-btn active" data-tab="Overview" data-i18n="tab_overview">Overview</button>
+            <button class="tab-btn" data-tab="Project" data-i18n="tab_project">Project</button>
         </div>
 
         <!-- ONLY THIS PART CHANGES HEIGHT -->
@@ -168,10 +168,10 @@
 
         <!-- Tabs -->
         <div class="timeline-tabs">
-            <button class="tab-btn active" data-tab="Overview" data-i18n="tab_overview"></button>
-            <button class="tab-btn" data-tab="Project" data-i18n="tab_project"></button>
-            <button class="tab-btn" data-tab="Engagement" data-i18n="tab_engagement"></button>
-            <button class="tab-btn" data-tab="Publication" data-i18n="tab_publication"></button>
+            <button class="tab-btn active" data-tab="Overview" data-i18n="tab_overview">Overview</button>
+            <button class="tab-btn" data-tab="Project" data-i18n="tab_project">Project</button>
+            <button class="tab-btn" data-tab="Engagement" data-i18n="tab_engagement">Engagement</button>
+            <button class="tab-btn" data-tab="Publication" data-i18n="tab_publication">Publication</button>
         </div>
 
         <!-- Tab Content Window -->
@@ -253,10 +253,10 @@
 
         <!-- Tabs (STABLE POSITION) -->
         <div class="timeline-tabs">
-            <button class="tab-btn active" data-tab="Overview" data-i18n="tab_overview"></button>
-            <button class="tab-btn" data-tab="Project" data-i18n="tab_project"></button>
-            <button class="tab-btn" data-tab="Engagement" data-i18n="tab_engagement"></button>
-            <button class="tab-btn" data-tab="Publication" data-i18n="tab_publication"></button>
+            <button class="tab-btn active" data-tab="Overview" data-i18n="tab_overview">Overview</button>
+            <button class="tab-btn" data-tab="Project" data-i18n="tab_project">Project</button>
+            <button class="tab-btn" data-tab="Engagement" data-i18n="tab_engagement">Engagement</button>
+            <button class="tab-btn" data-tab="Publication" data-i18n="tab_publication">Publication</button>
         </div>
 
         <!-- ONLY THIS PART CHANGES CONTENT (NOT POSITION) -->
@@ -320,15 +320,17 @@
 
     <div class="timeline-content">
 
-        <h2><em>09.2010 – 09.2014</em> <u>Bachelor Student in Physics</u></h2>
-        <h3>University of Isfahan, Isfahan, IRAN</h3>
-        <h4>Graduated within the top 10% of my cohort.</h4>
-
+        <h2>
+        <em data-i18n="bachelor_dates"></em>
+        <u data-i18n="bachelor_title"></u>
+        </h2>
+        <h3 data-i18n="bachelor_institute"></h3>
+        <h4 data-i18n="bachelor_grade"></h4>
 
         <!-- Tabs -->
         <div class="timeline-tabs">
-            <button class="tab-btn active" data-tab="Overview">Overview</button>
-            <button class="tab-btn" data-tab="Engagement">Engagement</button>
+            <button class="tab-btn active" data-tab="Overview" data-i18n="tab_overview">Overview</button>
+            <button class="tab-btn" data-tab="Engagement" data-i18n="tab_engagement">Engagement</button>
         </div>
 
         <!-- Tab Panels -->
@@ -336,33 +338,18 @@
 
             <div class="tab-content active" data-content="Overview">
 
-            <p>The curriculum consisted of six semesters of fundamental physics, followed by two specialized semesters in
-                atomic physics in the final year.</p>
+            <p data-i18n="bachelor_curriculum"></p>
+
                 <div class="two-column">
 
                     <div class="column">
-                        <p><strong>Core subjects:</strong></p>
-                        <ul>
-                        <li>Classical Mechanics</li>
-                        <li>Electromagnetism</li>
-                        <li>Mathematical Physics</li>
-                        <li>Quantum Mechanics</li>
-                        <li>Thermodynamics</li>
-                        <li>Statistical Mechanics</li>
-                        </ul>
+                        <p><strong data-i18n="bachelor_core"></strong></p>
+                        <ul data-i18n="bachelor_core_list"></ul>
                     </div>
 
                     <div class="column">
-                        <p><strong>Specialized subjects:</strong></p>
-                        <ul>
-                        <li>Superconductivity and its Applications</li>
-                        <li>Optics</li>
-                        <li>Laser Physics</li>
-                        <li>Introductory Astrophysics</li>
-                        <li>Atomic and Molecular Spectroscopy</li>
-                        <li>Nuclear Physics</li>
-                        <li>Laser Applications</li>
-                        </ul>
+                        <p><strong data-i18n="bachelor_specialized"></strong></p>
+                        <ul data-i18n="bachelor_specialized_list"></ul>
                     </div>
 
                 </div>
@@ -370,8 +357,8 @@
 
 
             <div class="tab-content" data-content="Engagement">
-                <p><strong>Active member</strong> of the University of Isfahan astronomy committee, conducted internal and external observation nights for students and staff.</p>
-                <p><strong>Contributing</strong> author in an award-winning student magazine, “Sepehr”.</p>
+                <p data-i18n="bachelor_engagement_1"></p>
+                <p data-i18n="bachelor_engagement_2"></p>
             </div>
 
         </div>
@@ -394,8 +381,9 @@
 
         <!-- Tabs (STABLE POSITION) -->
         <div class="timeline-tabs">
-            <button class="tab-btn active" data-tab="Overview">Overview</button>
-            <button class="tab-btn" data-tab="Project">Project</button>
+            <button class="tab-btn active" data-tab="Overview" data-i18n="tab_overview">Overview</button>
+            <button class="tab-btn" data-tab="Project" data-i18n="tab_project">Project</button>
+
 
         </div>
 
@@ -404,45 +392,20 @@
 
             <div class="tab-content active" data-content="Overview">
                 
-            <p><strong>Teaching:</strong> Collaborated as a teacher with the Avid Spadana Foundation, providing hands-on science experiments for children aged six to eleven in elementary schools.  
-            </p>
+            <p><strong data-i18n="work_teaching_label"></strong> <span data-i18n="work_teaching_text"></span></p>
+            <p><strong data-i18n="work_tutoring_label"></strong> <span data-i18n="work_tutoring_text"></span></p>
 
 
-            <p><strong>Tutoring:</strong> Provided private tutoring in mathematics, physics, and English for high school students.  
-            </p>
-
-                <p><strong>Skills:</strong>
-                
-                <ul>
-                    <li>Leadership and planning.</li>
-                    <li>Creativity and adaptability.</li>
-                    <li>Patience and empathy.</li>
-                    <li>Knowledge-sharing and story-telling.</li>
-                </ul>
-                
+                <p><strong data-i18n="work_skills_label"></strong>
+                <ul data-i18n="work_skills_list"></ul>               
                 </p>
 
             </div>
 
 
             <div class="tab-content" data-content="Project">
-                <p>The Avid Spadana Foundation offered educational programs
-                    in collaboration with elementary schools, focusing on hands-on science
-                    experiments for children aged six to eleven. The main goal was to help students
-                    understand and interact with the physical phenomena around them. As a teacher,
-                    my role was to introduce the concept of each experiment in simple terms,
-                    set up the experimental materials, and guide the children through the process.
-                    At the end of each session, we held a brainstorming discussion to help them better
-                    understand how the experiment related to their everyday lives. This valuable experience
-                    helped me to develop a simple and general language to communicate science with general audience.
-                </p>
-
-                <p> Offored private tutoring in mathematics, physics, and english for high school students. 
-                    This experience gave me great satisfaction,
-                    as it allowed me to share my knowledge with others while also strengthening my communication
-                    skills and deepening my own understanding of the subjects.
-                
-                </p>
+                <p data-i18n="work_project_p1"></p>
+                <p data-i18n="work_project_p2"></p>
             </div>
 
         </div>
@@ -624,6 +587,51 @@ const translations = {
         master_workshop_text: "Nanotechnology workshop (KARNO workshop), Tehran, Iran, 07.2017.",
 
 
+        bachelor_dates: "09.2010 – 09.2014",
+        bachelor_title: "Bachelor Student in Physics",
+        bachelor_institute: "University of Isfahan, Isfahan, Iran",
+        bachelor_grade: "Graduated within the top 10% of my cohort.",
+        bachelor_curriculum: "The curriculum consisted of six semesters of fundamental physics, followed by two specialized semesters in atomic physics in the final year.",
+        bachelor_core: "Core subjects:",
+        bachelor_specialized: "Specialized subjects:",
+        bachelor_core_list: `
+        <li>Classical Mechanics</li>
+        <li>Electromagnetism</li>
+        <li>Mathematical Physics</li>
+        <li>Quantum Mechanics</li>
+        <li>Thermodynamics</li>
+        <li>Statistical Mechanics</li>
+        `,
+        bachelor_specialized_list: `
+        <li>Superconductivity and its Applications</li>
+        <li>Optics</li>
+        <li>Laser Physics</li>
+        <li>Introductory Astrophysics</li>
+        <li>Atomic and Molecular Spectroscopy</li>
+        <li>Nuclear Physics</li>
+        <li>Laser Applications</li>
+        `,
+        bachelor_engagement_1: "<strong>Active member</strong> of the University of Isfahan astronomy committee; organized internal and external observation nights for students and staff.",
+        bachelor_engagement_2: "<strong>Contributing author</strong> to the award-winning student magazine “Sepehr”.",
+
+        work_dates: "2017 – 2019",
+        work_title: "Teaching Experience",
+        work_place: "Elementary and high school students, Isfahan, Iran",
+        work_teaching_label: "Teaching:",
+        work_teaching_text: "Collaborated as a teacher with the Avid Spadana Foundation, providing hands-on science experiments for children aged six to eleven in elementary schools.",
+        work_tutoring_label: "Tutoring:",
+        work_tutoring_text: "Provided private tutoring in mathematics, physics, and English for high school students.",
+        work_skills_label: "Skills:",
+        work_skills_list: `
+        <li>Leadership and planning</li>
+        <li>Creativity and adaptability</li>
+        <li>Patience and empathy</li>
+        <li>Knowledge-sharing and storytelling</li>
+        `,
+        work_project_p1: "The Avid Spadana Foundation offered educational programs in collaboration with elementary schools, focusing on hands-on science experiments for children aged six to eleven. The main goal was to help students understand and interact with the physical phenomena around them. As a teacher, my role was to introduce the concept of each experiment in simple terms, set up the experimental materials, and guide the children through the process. At the end of each session, we held a brainstorming discussion to help them better understand how the experiment related to their everyday lives. This valuable experience helped me develop a clear and accessible way of communicating scientific concepts to a general audience.",
+        work_project_p2: "I also offered private tutoring in mathematics, physics, and English for high school students. This experience was deeply rewarding, as it allowed me to share my knowledge while further strengthening my communication skills and deepening my own understanding of the subjects."
+
+        ,
         about_title: "About Me",
         about_preview: "I was born and raised in one of the most historically rich cities in the world, Isfahan, in the heart of Iran. From a very young age—around six or seven—I fell in love with the magic of the stars in the night sky, much like many other children. What began as childhood curiosity, however, gradually developed into a clear and lasting ambition. I pursued this dream with patience and determination, completing high school in mathematics and physics, ranking among the top students of my year.",
         about_p1: "I went on to earn my Bachelor’s degree in Physics at the University of Isfahan between 2010 and 2014. After graduating in my hometown, I felt ready to embrace a new challenge and slightly redirect my academic path. I therefore took a one-year gap to prepare for the national entrance examination for a Master’s program in Nanotechnology. The year 2015 proved to be a pivotal period in both my personal and academic development, as I was accepted into one of the leading universities in Tehran, Tarbiat Modares University. Moving to Tehran marked my first experience living and studying in a major metropolitan environment.",
@@ -647,7 +655,7 @@ const translations = {
         git_cert: "Git Zertifikat",
 
         postdoc_dates: "02.2025 – 09.2025",
-        postdoc_title: "Postdoktorandin",
+        postdoc_title: "Postdoc/Wissenschaftlerin",
         postdoc_institute: "Max-Planck-Institut für Struktur und Dynamik der Materie, Hamburg, Deutschland",
         postdoc_leadership: "Projektleitung:",
         postdoc_data_analysis: "Datenanalyse:",
@@ -666,7 +674,7 @@ const translations = {
 
 
         phd_dates: "11.2019 – 02.2025",
-        phd_title: "Doktorandin der Physik",
+        phd_title: "Promotion in Physik",
         phd_institute: "Max-Planck-Institut für Struktur und Dynamik der Materie (MPSD) & Universität Hamburg, Hamburg, Deutschland",
         phd_grade: "Abschluss mit Auszeichnung.",
         phd_thesis_label: "Dissertation:",
@@ -727,7 +735,51 @@ const translations = {
         master_conference_text: "UFGNSM-Konferenz 2017, Insel Kish, Iran, 09.2017.",
         master_workshop_text: "Nanotechnologie-Workshop (KARNO-Workshop), Teheran, Iran, 07.2017.",
 
+        bachelor_dates: "09.2010 – 09.2014",
+        bachelor_title: "Bachelorstudentin der Physik",
+        bachelor_institute: "Universität Isfahan, Isfahan, Iran",
+        bachelor_grade: "Abschluss unter den besten 10 % des Jahrgangs.",
+        bachelor_curriculum: "Das Curriculum umfasste sechs Semester Grundlagenphysik, gefolgt von zwei spezialisierten Semestern im Bereich der Atomphysik im letzten Studienjahr.",
+        bachelor_core: "Grundlagenfächer:",
+        bachelor_specialized: "Spezialisierte Fächer:",
+        bachelor_core_list: `
+        <li>Klassische Mechanik</li>
+        <li>Elektromagnetismus</li>
+        <li>Mathematische Physik</li>
+        <li>Quantenmechanik</li>
+        <li>Thermodynamik</li>
+        <li>Statistische Mechanik</li>
+        `,
+        bachelor_specialized_list: `
+        <li>Supraleitung und ihre Anwendungen</li>
+        <li>Optik</li>
+        <li>Laserphysik</li>
+        <li>Einführung in die Astrophysik</li>
+        <li>Atom- und Molekülspektroskopie</li>
+        <li>Kernphysik</li>
+        <li>Laseranwendungen</li>
+        `,
+        bachelor_engagement_1: "<strong>Aktives Mitglied</strong> des Astronomiekomitees der Universität Isfahan; Organisation interner und externer Beobachtungsnächte für Studierende und Mitarbeitende.",
+        bachelor_engagement_2: "<strong>Mitwirkende Autorin</strong> der preisgekrönten Studierendenzeitschrift „Sepehr“.",
 
+        work_dates: "2017 – 2019",
+        work_title: "Lehrtätigkeit",
+        work_place: "Grund- und weiterführende Schulen, Isfahan, Iran",
+        work_teaching_label: "Unterricht:",
+        work_teaching_text: "Mitarbeit als Lehrerin bei der Avid Spadana Foundation mit dem Schwerpunkt auf praxisnahen naturwissenschaftlichen Experimenten für Kinder im Alter von sechs bis elf Jahren an Grundschulen.",
+        work_tutoring_label: "Nachhilfe:",
+        work_tutoring_text: "Privater Nachhilfeunterricht in Mathematik, Physik und Englisch für Schülerinnen und Schüler der Oberstufe.",
+        work_skills_label: "Kompetenzen:",
+        work_skills_list: `
+        <li>Führungs- und Planungskompetenz</li>
+        <li>Kreativität und Anpassungsfähigkeit</li>
+        <li>Geduld und Empathie</li>
+        <li>Wissensvermittlung und Storytelling</li>
+        `,
+        work_project_p1: "Die Avid Spadana Foundation bot in Zusammenarbeit mit Grundschulen Bildungsprogramme mit dem Schwerpunkt auf praxisorientierten naturwissenschaftlichen Experimenten für Kinder im Alter von sechs bis elf Jahren an. Ziel war es, den Schülerinnen und Schülern zu helfen, physikalische Phänomene aus ihrem Alltag besser zu verstehen. Als Lehrerin bestand meine Aufgabe darin, die Konzepte in einfachen Worten zu erklären, die Experimente vorzubereiten und die Kinder während der Durchführung zu begleiten. Am Ende jeder Sitzung führten wir eine gemeinsame Reflexionsrunde durch, um den Bezug zum Alltag herzustellen. Diese Erfahrung half mir, eine verständliche und zugängliche Sprache zur Vermittlung wissenschaftlicher Inhalte zu entwickeln.",
+        work_project_p2: "Darüber hinaus gab ich privaten Nachhilfeunterricht in Mathematik, Physik und Englisch für Schülerinnen und Schüler der Oberstufe. Diese Tätigkeit war für mich besonders erfüllend, da sie mir ermöglichte, mein Wissen weiterzugeben, meine Kommunikationsfähigkeiten zu stärken und mein eigenes fachliches Verständnis zu vertiefen."
+
+        ,
         about_title: "Über mich",
         about_preview: "Ich wurde in einer der historisch reichsten Städte der Welt geboren und bin dort aufgewachsen: in Isfahan, im Herzen des Iran. Schon in sehr jungen Jahren – im Alter von etwa sechs oder sieben Jahren – faszinierte mich die Magie der Sterne am Nachthimmel, wie wohl viele Kinder sie erleben. Was zunächst als kindliche Neugier begann, entwickelte sich jedoch allmählich zu einer klaren und nachhaltigen Leidenschaft. Mit Geduld und Zielstrebigkeit verfolgte ich diesen Traum und schloss die Schule mit dem Schwerpunkt Mathematik und Physik, wobei ich zu den besten Schülerinnen meines Jahrgangs zählte.",
         about_p1: "Anschließend absolvierte ich von 2010 bis 2014 meinen Bachelorstudiengang in Physik an der Universität Isfahan. Nach meinem Abschluss in meiner Heimatstadt fühlte ich mich bereit, eine neue Herausforderung anzunehmen und meinen akademischen Weg leicht neu auszurichten. Daher legte ich ein Jahr Pause ein, um mich auf die nationale Aufnahmeprüfung für ein Masterstudium im Bereich Nanotechnologie vorzubereiten. Das Jahr 2015 stellte sowohl persönlich als auch akademisch eine entscheidende Phase dar, da ich an einer der führenden Universitäten Teherans, der Tarbiat-Modares-Universität, angenommen wurde. Der Umzug nach Teheran bedeutete meine erste Erfahrung des Lebens und Studiums in einer großen Metropole.",
