@@ -29,7 +29,11 @@
         <div class="current-text">
             <h2>Niloofar Taherian H.</h2>
             <h2>Dr. rer nat.</h2> 
-            <h3>Current</h3>
+            <h3 data-i18n="current_title"></h3>
+
+
+            <p class="current-intro" data-i18n="current_intro"></p>
+
 
             <p class="current-intro">
                 As a PhD graduate in experimental physics, I bring a wealth of hands-on experience in optics, laser, cryogenics,
@@ -42,12 +46,12 @@
             
             <div class="current-divider"></div>
 
-            <p><strong>Languages:</strong> Farsi (native), English (C2), German (C1)</p>
-            <p><strong>Programming languages:</strong> Python, MATLAB, SQL
+            <p><strong data-i18n="label_languages"></strong> Farsi (native), English (C2), German (C1)</p>
+            <p><strong data-i18n="label_programming"></strong> Python, MATLAB, SQL
             <a href="certificate/SQL_Udemy_Niloofar Taherian.pdf" target="_blank" class="cert-link">(SQL Certificate)</a></p>
-            <p><strong>Tools:</strong> Visual Studio Code, Jupyter Notebook, pgAdmin, Git (Github)
+            <p><strong data-i18n="Label_tools"></strong> Visual Studio Code, Jupyter Notebook, pgAdmin, Git (Github)
             <a href="certificate/Git & Github_Udemy_Niloofar Taherian.pdf" target="_blank" class="cert-link">(Git Certificate)</a></p>
-            <p><strong>Software:</strong> LaTeX, Adobe Illustrator, Microsoft Office (PowerPoint, Word, Excel)</p>
+            <p><strong data-i18n="label_software"></strong> LaTeX, Adobe Illustrator, Microsoft Office (PowerPoint, Word, Excel)</p>
         </div>
 
     </div>
@@ -602,6 +606,18 @@
 <script>
 const translations = {
     en: {
+        current_title: "Current",
+        current_intro: "As a PhD graduate in experimental physics, I bring a wealth of hands-on experience in optics, laser, cryogenics, sample preparation as well as analytical expertise in data analysis, simulation and modelling. I have proven my ability to lead complex projects, exercising strong and effective communication across diverse teams. For the next step in my career, I am looking for a position in which I can apply my expertise and expand my professional capabilities.",
+
+        label_languages: "Languages: Farsi (native), English (C2), German (C1)",
+        label_programming: "Programming languages: Python, MATLAB, SQL",
+        label_tools: "Tools: Visual Studio Code, Jupyter Notebook, pgAdmin, Git (Github)",
+        label_software: "Software: LaTeX, Adobe Illustrator, Microsoft Office (PowerPoint, Word, Excel)",
+        cv_en: "CV (English)",
+        cv_de: "CV (German)",
+        sql_cert: "Certificate",
+        git_cert: "Certificate",
+
         about_title: "About Me",
         about_preview: "I was born and raised in one of the most historically rich cities in the world, Isfahan, in the heart of Iran. From a very young age—around six or seven—I fell in love with the magic of the stars in the night sky, much like many other children. What began as childhood curiosity, however, gradually developed into a clear and lasting ambition. I pursued this dream with patience and determination, completing high school in mathematics and physics, ranking among the top students of my year.",
         about_p1: "I went on to earn my Bachelor’s degree in Physics at the University of Isfahan between 2010 and 2014. After graduating in my hometown, I felt ready to embrace a new challenge and slightly redirect my academic path. I therefore took a one-year gap to prepare for the national entrance examination for a Master’s program in Nanotechnology. The year 2015 proved to be a pivotal period in both my personal and academic development, as I was accepted into one of the leading universities in Tehran, Tarbiat Modares University. Moving to Tehran marked my first experience living and studying in a major metropolitan environment.",
@@ -609,15 +625,21 @@ const translations = {
         about_p3: "IIn May 2025, I successfully defended my PhD thesis. I subsequently continued in the same group as a postdoctoral researcher until September 2025. At that point, I recognized that it was time to move forward, explore new directions, and seek the next stage of my professional journey.",
 
         read_more: "Read more ↓",
-        read_less: "Read less ↑",
-
-        cv_en: "CV (English)",
-        cv_de: "CV (German)",
-        sql_cert: "Certificate",
-        git_cert: "Certificate"
+        read_less: "Read less ↑"
     },
 
     de: {
+        current_title: "Aktuell",
+        current_intro: "Als promovierte Physikerin im Bereich der experimentellen Physik verfüge ich über umfangreiche praktische Erfahrung in den Bereichen Optik, Lasertechnologie, Kryotechnik und Probenpräparation sowie über fundierte analytische Kompetenzen in der Datenanalyse, Simulation und Modellierung. Ich habe meine Fähigkeit unter Beweis gestellt, komplexe Projekte zu leiten und dabei effektiv mit interdisziplinären Teams zu kommunizieren. Für den nächsten Schritt meiner beruflichen Laufbahn suche ich eine Position, in der ich meine Expertise gezielt einsetzen und weiter ausbauen kann.",    
+        label_languages: "Sprachen: Persisch (Muttersprache), Englisch (C2), Deutsch (C1)",
+        label_programming: "Programmiersprachen: Python, MATLAB, SQL",
+        label_tools: "Tools: Visual Studio Code, Jupyter Notebook, pgAdmin, Git (Github)",
+        label_software: "Software: LaTeX, Adobe Illustrator, Microsoft Office (PowerPoint, Word, Excel)",
+        cv_en: "Lebenslauf (Englisch)",
+        cv_de: "Lebenslauf (Deutsch)",
+        sql_cert: "SQL Zertifikat",
+        git_cert: "Git Zertifikat",
+
         about_title: "Über mich",
         about_preview: "Ich wurde in einer der historisch reichsten Städte der Welt geboren und bin dort aufgewachsen: in Isfahan, im Herzen des Iran. Schon in sehr jungen Jahren – im Alter von etwa sechs oder sieben Jahren – faszinierte mich die Magie der Sterne am Nachthimmel, wie wohl viele Kinder sie erleben. Was zunächst als kindliche Neugier begann, entwickelte sich jedoch allmählich zu einer klaren und nachhaltigen Leidenschaft. Mit Geduld und Zielstrebigkeit verfolgte ich diesen Traum und schloss die Schule mit dem Schwerpunkt Mathematik und Physik, wobei ich zu den besten Schülerinnen meines Jahrgangs zählte.",
         about_p1: "Anschließend absolvierte ich von 2010 bis 2014 meinen Bachelorstudiengang in Physik an der Universität Isfahan. Nach meinem Abschluss in meiner Heimatstadt fühlte ich mich bereit, eine neue Herausforderung anzunehmen und meinen akademischen Weg leicht neu auszurichten. Daher legte ich ein Jahr Pause ein, um mich auf die nationale Aufnahmeprüfung für ein Masterstudium im Bereich Nanotechnologie vorzubereiten. Das Jahr 2015 stellte sowohl persönlich als auch akademisch eine entscheidende Phase dar, da ich an einer der führenden Universitäten Teherans, der Tarbiat-Modares-Universität, angenommen wurde. Der Umzug nach Teheran bedeutete meine erste Erfahrung des Lebens und Studiums in einer großen Metropole.",
@@ -625,12 +647,7 @@ const translations = {
         about_p3: "Im Mai 2025 verteidigte ich meine Dissertation erfolgreich. Anschließend arbeitete ich bis September 2025 als Postdoktorandin in derselben Forschungsgruppe. Zu diesem Zeitpunkt erkannte ich, dass es an der Zeit war, neue Wege einzuschlagen, weitere Perspektiven zu erkunden und den nächsten Abschnitt meines beruflichen Werdegangs zu gestalten.",
 
         read_more: "Mehr lesen ↓",
-        read_less: "Weniger lesen ↑",
-
-        cv_en: "Lebenslauf (Englisch)",
-        cv_de: "Lebenslauf (Deutsch)",
-        sql_cert: "SQL Zertifikat",
-        git_cert: "Git Zertifikat"
+        read_less: "Weniger lesen ↑"
 
     }
 };
