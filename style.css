@@ -125,6 +125,10 @@ body {
     margin-bottom: 12px;
     border-bottom: 1px solid #ccc;
 }
+.navbar a,
+.navbar button {
+  text-transform: capitalize;
+}
 
 .current-tab {
     background: none;
