@@ -243,16 +243,20 @@
 
     <div class="timeline-content">
 
-        <h2><em>09.2015 – 09.2017</em> <u>Master Student in Nanotechnology Engineering</u></h2>
-        <h3>Tarbiat Modares University (TMU), Tehran, IRAN·</h3>
-        <h4>Graduated as the second-ranked student in my cohort.</h4>
+        <h2>
+        <em data-i18n="master_dates"></em>
+        <u data-i18n="master_title"></u>
+        </h2>
+        <h3 data-i18n="master_institute"></h3>
+        <h4 data-i18n="master_grade"></h4>
+
 
         <!-- Tabs (STABLE POSITION) -->
         <div class="timeline-tabs">
-            <button class="tab-btn active" data-tab="Overview">Overview</button>
-            <button class="tab-btn" data-tab="Project">Project</button>
-            <button class="tab-btn" data-tab="Engagement">Engagement</button>
-            <button class="tab-btn" data-tab="Publication">Publication</button>
+            <button class="tab-btn active" data-tab="Overview" data-i18n="tab_overview"></button>
+            <button class="tab-btn" data-tab="Project" data-i18n="tab_project"></button>
+            <button class="tab-btn" data-tab="Engagement" data-i18n="tab_engagement"></button>
+            <button class="tab-btn" data-tab="Publication" data-i18n="tab_publication"></button>
         </div>
 
         <!-- ONLY THIS PART CHANGES CONTENT (NOT POSITION) -->
@@ -260,43 +264,29 @@
 
             <div class="tab-content active" data-content="Overview">
 
-                <p><strong>Master thesis:</strong> "Electrochemical Synthesis of Ni-Mn-Sn Ferromagnetic Shape Memory Alloy Nanostructure"</p> <p>(Grade: 19.5 out of 20)</p>
+                <p><strong data-i18n="master_thesis_label"></strong> "Electrochemical Synthesis of Ni-Mn-Sn Ferromagnetic Shape Memory Alloy Nanostructure"</p> <p>(Grade: 19.5 out of 20)</p>
                 <div class="two-column">
 
                     <div class="column">
-                        <p><strong>Hands-on Experience:</strong></p>
-                        <ul>
-                        <li>Electrodeposition technique.</li>
-                        <li>Cyclic and linear sweep voltammetry.</li>
-                        <li>XRD analysis.</li>
-                        </ul>
+                        <p><strong data-i18n="master_hands_on"></strong>
+                            <ul data-i18n="master_hands_on_list"></ul>
+                        </p>
                     </div>
 
                     <div class="column">
-                        <p><strong>IT-Skills:</strong></p>
-                        <ul>
-                        <li>OriginLab</li>
-                        </ul>
+                        <p><strong data-i18n="master_it"></strong>
+                            <ul data-i18n="master_it_list"></ul>
+                        </p>
                     </div>
 
                 </div>
             </div>
 
             <div class="tab-content" data-content="Project">
-                <p><strong>Project description:</strong> In this project, the goal was to synthesize a nanostructured thin film composed
-                    of three metallic elements- Ni, Mn, and Sn- with precisely controlled compositional ratios.
-                    These nanostructures have the potential to function as magnetic shape memory alloys,
-                    a class of materials capable of recovering their original shape under the application
-                    of a magnetic field.</p>
-                    <p>
-                    For the growth process, I employed the electrodeposition technique to fabricate thin films
-                    from a heated solution containing a mixture of dissolved Ni, Mn, and Sn precursors.
-                    Following deposition, I performed cyclic and linear sweep voltammetry to investigate
-                    the electrochemical kinetics of the solution. The chemical composition of the films was
-                    characterized using Energy-Dispersive Spectroscopy (EDS), while their surface morphology
-                    was examined using Scanning Electron Microscopy (SEM) and Field Emission Scanning Electron
-                    Microscopy (FE-SEM). Finally, Grazing Incidence X-ray Diffraction (GI-XRD) was used to determine
-                    the precise crystal structure of the films.
+                <p><strong data-i18n="master_project_desc"></strong>
+                    <p data-i18n="master_project_p1"></p>
+                    <p data-i18n="master_project_p2"></p>
+
                 </p>
 
                 
@@ -304,9 +294,9 @@
 
             <div class="tab-content" data-content="Engagement">
                 
-                    <p><strong>Conference (Poster) attendence:</strong> 2017-UFGNSM Conference, Kish Island, IRAN. 09.2017</p>
-                    <p><strong>Workshop attendence:</strong> Nanotechnology workshop (KARNO workshop), Tehran, IRAN. 07.2017</p> 
-                
+                    <p><strong data-i18n="master_conference"></strong> <span data-i18n="master_conference_text"></span></p>
+                    <p><strong data-i18n="master_workshop"></strong> <span data-i18n="master_workshop_text"></span></p>
+    
             </div>
 
             <div class="tab-content" data-content="Publication">
@@ -610,6 +600,30 @@ const translations = {
         <li>Low Energy Electrodynamics in Solids (LEES) 2023, Sankt Pölten, Austria, 06.2023.</li>
         `,
 
+        master_dates: "09.2015 – 09.2017",
+        master_title: "Master Student in Nanotechnology Engineering",
+        master_institute: "Tarbiat Modares University (TMU), Tehran, Iran",
+        master_grade: "Graduated as the second-ranked student in my cohort.",
+        master_thesis_label: "Master thesis:",
+        master_hands_on: "Hands-on experience:",
+        master_it: "IT skills:",
+        master_project_desc: "Project description:",
+        master_conference: "Conference (poster presentation):",
+        master_workshop: "Workshop attendance:",
+        master_hands_on_list: `
+        <li>Electrodeposition technique</li>
+        <li>Cyclic and linear sweep voltammetry</li>
+        <li>XRD analysis</li>
+        `,
+        master_it_list: `
+        <li>OriginLab</li>
+        `,
+        master_project_p1: "In this project, the goal was to synthesize a nanostructured thin film composed of three metallic elements—Ni, Mn, and Sn—with precisely controlled compositional ratios. These nanostructures have the potential to function as magnetic shape memory alloys, a class of materials capable of recovering their original shape under the application of a magnetic field.",
+        master_project_p2: "For the growth process, I employed the electrodeposition technique to fabricate thin films from a heated solution containing a mixture of dissolved Ni, Mn, and Sn precursors. Following deposition, I performed cyclic and linear sweep voltammetry to investigate the electrochemical kinetics of the solution. The chemical composition of the films was characterized using energy-dispersive spectroscopy (EDS), while their surface morphology was examined using scanning electron microscopy (SEM) and field emission scanning electron microscopy (FE-SEM). Finally, grazing-incidence X-ray diffraction (GI-XRD) was used to determine the precise crystal structure of the films.",
+        master_conference_text: "2017-UFGNSM Conference, Kish Island, Iran, 09.2017.",
+        master_workshop_text: "Nanotechnology workshop (KARNO workshop), Tehran, Iran, 07.2017.",
+
+
         about_title: "About Me",
         about_preview: "I was born and raised in one of the most historically rich cities in the world, Isfahan, in the heart of Iran. From a very young age—around six or seven—I fell in love with the magic of the stars in the night sky, much like many other children. What began as childhood curiosity, however, gradually developed into a clear and lasting ambition. I pursued this dream with patience and determination, completing high school in mathematics and physics, ranking among the top students of my year.",
         about_p1: "I went on to earn my Bachelor’s degree in Physics at the University of Isfahan between 2010 and 2014. After graduating in my hometown, I felt ready to embrace a new challenge and slightly redirect my academic path. I therefore took a one-year gap to prepare for the national entrance examination for a Master’s program in Nanotechnology. The year 2015 proved to be a pivotal period in both my personal and academic development, as I was accepted into one of the leading universities in Tehran, Tarbiat Modares University. Moving to Tehran marked my first experience living and studying in a major metropolitan environment.",
@@ -688,6 +702,30 @@ const translations = {
         <li>Gordon Research Conference (GRC) zu Ultrafast Phenomena in Cooperative Systems, Lucca, Italien, 02.2024.</li>
         <li>Low Energy Electrodynamics in Solids (LEES) 2023, Sankt Pölten, Österreich, 06.2023.</li>
         `,
+
+
+        master_dates: "09.2015 – 09.2017",
+        master_title: "Masterstudentin im Bereich Nanotechnologie",
+        master_institute: "Tarbiat-Modares-Universität (TMU), Teheran, Iran",
+        master_grade: "Abschluss als zweitbeste Studentin des Jahrgangs.",
+        master_thesis_label: "Masterarbeit:",
+        master_hands_on: "Praktische Erfahrungen:",
+        master_it: "IT-Kenntnisse:",
+        master_project_desc: "Projektbeschreibung:",
+        master_conference: "Konferenz (Posterbeitrag):",
+        master_workshop: "Workshop-Teilnahme:",
+        master_hands_on_list: `
+        <li>Elektroabscheidung</li>
+        <li>Zyklische und lineare Sweep-Voltammetrie</li>
+        <li>Röntgendiffraktometrie (XRD)</li>
+        `,
+        master_it_list: `
+        <li>OriginLab</li>
+        `,
+        master_project_p1: "Ziel dieses Projekts war die Synthese eines nanostrukturierten Dünnfilms, bestehend aus drei metallischen Elementen – Ni, Mn und Sn – mit präzise kontrollierten Zusammensetzungsverhältnissen. Diese Nanostrukturen besitzen das Potenzial, als magnetische Formgedächtnislegierungen zu fungieren, eine Materialklasse, die unter dem Einfluss eines Magnetfeldes ihre ursprüngliche Form wiedererlangen kann.",
+        master_project_p2: "Für den Wachstumsprozess setzte ich die Elektroabscheidung zur Herstellung der Dünnfilme aus einer erhitzten Lösung mit gelösten Ni-, Mn- und Sn-Prekursoren ein. Nach der Abscheidung führte ich zyklische und lineare Sweep-Voltammetrie durch, um die elektrochemischen Kinetiken der Lösung zu untersuchen. Die chemische Zusammensetzung der Filme wurde mittels energiedispersiver Röntgenspektroskopie (EDS) bestimmt, während die Oberflächenmorphologie durch Rasterelektronenmikroskopie (SEM) und Feldemissions-Rasterelektronenmikroskopie (FE-SEM) analysiert wurde. Abschließend wurde die exakte Kristallstruktur der Filme mittels streifendem Einfall (GI-XRD) bestimmt.",
+        master_conference_text: "UFGNSM-Konferenz 2017, Insel Kish, Iran, 09.2017.",
+        master_workshop_text: "Nanotechnologie-Workshop (KARNO-Workshop), Teheran, Iran, 07.2017.",
 
 
         about_title: "Über mich",
